@@ -39,4 +39,34 @@ const adaptOfferToClient = (offer) => {
     };
 };
 
+export function adaptFullOfferToClient(offer, author) {
+    return {
+        id: offer.id,
+        title: offer.title,
+        description: offer.description,
+        publishDate: offer.publishDate,
+        city: offer.city,
+        previewImage: offer.previewImage,
+        photos: offer.photos,
+        isPremium: offer.isPremium,
+        isFavorite: offer.isFavorite,
+        rating: parseFloat(offer.rating),
+        type: offer.type,
+        rooms: offer.rooms,
+        guests: offer.guests,
+        price: offer.price,
+        features: offer.features,
+        commentsCount: offer.commentsCount,
+        latitude: offer.latitude,
+        longitude: offer.longitude,
+        author: {
+            id: author.id,
+            username: author.username,
+            email: author.email,
+            avatar: author.avatar,
+            userType: author.userType,
+        },
+    };
+}
+
 export { adaptOfferToClient };
