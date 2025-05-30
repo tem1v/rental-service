@@ -118,7 +118,42 @@ async function createOffer(req, res, next) {
         );
     }
 }
-   
 
-export { getAllOffers, getFullOffer, createOffer };
-  
+const getFavoriteOffers = async (req, res) => {
+    try {
+        const favoriteOffers = await Offer.findAll({
+            where: { isFavorite: true },
+        });
+
+        // Адаптируем, если нужно
+        const adaptedOffers = favoriteOffers.map(adaptOfferToClient);
+
+        res.status(200).json(adaptedOffers);
+    } catch (error) {
+        console.error("Ошибка при получении избранных офферов:", error);
+        res.status(500).json({
+            message: "Ошибка сервера при получении избранных предложений",
+        });
+    }
+};
+
+const toggleFavorite = async (req, res, next) => {
+	try{
+		const { offerId, status } = req.params;
+
+		const offer = await Offer.findByPk(offerId);
+		if(!offer){
+			return next(ApiError.notFound('Предложение не найдено'));
+		}
+
+		offer.isFavorite = status === '1';
+		await offer.save();
+
+		res.json(offer);
+	} catch(error){
+		next(ApiError.internal('Ошибка при обновлении статуса избранного'));
+	}
+};
+
+
+export { getAllOffers, getFullOffer, createOffer, getFavoriteOffers, toggleFavorite };
