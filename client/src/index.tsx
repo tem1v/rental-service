@@ -7,7 +7,7 @@ import { offersList } from './mocks/offers-list'
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <App 
-		rentalOffersCount={12}
+		rentalOffersCount={3}
 		offers = {offers}
 		offersList={offersList}
 	/>

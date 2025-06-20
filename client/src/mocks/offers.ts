@@ -8,7 +8,11 @@ export const offers: FullOffer[] = [
             "A new spacious villa, one floor. All commodities, jacuzzi and beautiful scenery. Ideal for families",
         type: "apartment",
         price: 370,
-        images: ["20.jpg", "17.jpg", "16.jpg", "15.jpg", "2.jpg", "27.jpg"],
+        images: [
+            "/markup/img/apartment-01.jpg",
+            "/markup/img/apartment-02.jpg",
+            "/markup/img/apartment-03.jpg",
+        ],
         city: {
             name: "Paris",
             location: {
@@ -26,7 +30,7 @@ export const offers: FullOffer[] = [
         host: {
             isPro: true,
             name: "Angelina",
-            avatarUrl: "avatar-angelina.jpg",
+            avatarUrl: "/markup/img/avatar-angelina.jpg",
         },
         isPremium: false,
         isFavorite: true,
@@ -41,7 +45,11 @@ export const offers: FullOffer[] = [
             "A new spacious villa, one floor. All commodities, jacuzzi and beautiful scenery. Ideal for families",
         type: "apartment",
         price: 370,
-        images: ["20.jpg", "17.jpg", "16.jpg", "15.jpg", "2.jpg", "27.jpg"],
+        images: [
+            "/markup/img/apartment-02.jpg",
+            "/markup/img/apartment-01.jpg",
+            "/markup/img/apartment-03.jpg",
+        ],
         city: {
             name: "Paris",
             location: {
@@ -59,7 +67,7 @@ export const offers: FullOffer[] = [
         host: {
             isPro: true,
             name: "Angelina",
-            avatarUrl: "avatar-angelina.jpg",
+            avatarUrl: "/markup/img/avatar-angelina.jpg",
         },
         isPremium: false,
         isFavorite: true,
@@ -74,7 +82,11 @@ export const offers: FullOffer[] = [
             "A new spacious villa, one floor. All commodities, jacuzzi and beautiful scenery. Ideal for families",
         type: "apartment",
         price: 370,
-        images: ["20.jpg", "17.jpg", "16.jpg", "15.jpg", "2.jpg", "27.jpg"],
+        images: [
+            "/markup/img/apartment-03.jpg",
+            "/markup/img/apartment-02.jpg",
+            "/markup/img/apartment-01.jpg",
+        ],
         city: {
             name: "Paris",
             location: {
@@ -92,7 +104,7 @@ export const offers: FullOffer[] = [
         host: {
             isPro: true,
             name: "Angelina",
-            avatarUrl: "avatar-angelina.jpg",
+            avatarUrl: "/markup/img/avatar-angelina.jpg",
         },
         isPremium: false,
         isFavorite: true,

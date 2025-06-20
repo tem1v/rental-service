@@ -7,7 +7,7 @@ export const offersList: OffersList[] = [
 
         type: "apartment",
         price: 370,
-        previewImage: "/markup/img/apartment-02.jpg",
+        previewImage: "/markup/img/apartment-01.jpg",
         city: {
             name: "Paris",
             location: {
@@ -55,7 +55,7 @@ export const offersList: OffersList[] = [
 
         type: "apartment",
         price: 370,
-        previewImage: "/markup/img/apartment-02.jpg",
+        previewImage: "/markup/img/apartment-03.jpg",
         city: {
             name: "Paris",
             location: {
