@@ -188,7 +188,7 @@ function Offer({ offers }: OfferProps) {
                                             <div className="reviews__avatar-wrapper user__avatar-wrapper">
                                                 <img
                                                     className="reviews__avatar user__avatar"
-                                                    src="img/avatar-max.jpg"
+                                                    src="/markup/img/avatar-max.jpg"
                                                     width="54"
                                                     height="54"
                                                     alt="Reviews avatar"
@@ -242,7 +242,7 @@ function Offer({ offers }: OfferProps) {
                                     price: "80",
                                     name: "Wood and stone place",
                                     type: "Private room",
-                                    img: "room.jpg",
+                                    img: "apartment-01.jpg",
                                     active: true,
                                 },
                                 {
@@ -274,7 +274,7 @@ function Offer({ offers }: OfferProps) {
                                         <a href="#">
                                             <img
                                                 className="place-card__image"
-                                                src={`img/${place.img}`}
+                                                src={`/markup/img/${place.img}`}
                                                 width="260"
                                                 height="200"
                                                 alt="Place image"
